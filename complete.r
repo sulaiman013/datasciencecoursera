@@ -23,3 +23,13 @@ complete <- function(directory, id = 1:332) {
 }
 
 complete("coursera", c(1:5))
+
+
+cc <- complete("coursera", 54)
+print(cc$nobs)
+
+RNGversion("3.5.1")
+set.seed(42)
+cc <- complete("coursera", 332:1)
+use <- sample(332, 10)
+print(cc[use, "nobs"])
