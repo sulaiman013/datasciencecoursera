@@ -22,4 +22,4 @@ pmean <- function(dir, x, id = 1:332){
 
 
 
-pmean("coursera","sulfate",id=1:10) 
+pmean("coursera", "nitrate")
